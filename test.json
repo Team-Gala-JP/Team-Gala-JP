@@ -1,0 +1,62 @@
+{
+    "Objects":[
+        {
+            "id" : 0,
+            "Type": "StopLights",
+            "Connections": { 
+                "_comment": "key is the index of the connection, value is the id of the object it connects to.",
+                "0": 1,
+                "1": 2
+            },
+            "_comment": "Position is an array of 2 points top left and bottom right of the object.",
+            "position":[
+               [0,1],
+               [1,1]
+            ],
+            "Config":
+            {
+                "NumberOfEntrances": 4,
+                "RedTime": 10,
+                "GreenTime": 10,
+                "YellowTime": 3,
+                "Phasees" :
+                {
+                    "_comment": "What lights are on for each phase"
+                }
+            }
+        },
+
+        {
+            "id" : 1,
+            "Type": "Road",
+            "Connections": {
+                "0" : 0,
+                "1": null
+            },
+            "position":[
+                [1,1],
+                [2,1]
+            ],
+            "Config":
+            {
+                "Lanes": 2,
+                "BikeLanes": true
+            }
+        }
+    ],
+    "Globalsettings":
+    {
+        "Position" : [
+            0,
+            1,
+            2
+        ],
+        "_comment": "position is an array of 3 numbers used for openstreetmap."
+    },
+
+    "SimulationParameters":
+    {
+        "TrafficDensity": 0.5,
+        "SimulationSpeed": 1
+    }
+}
