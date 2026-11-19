@@ -40,7 +40,8 @@
             "Config":
             {
                 "Lanes": 2,
-                "BikeLanes": true
+                "BikeLanes": true,
+                "SpeedLimit": 35
             }
         }
     ],
@@ -58,5 +59,23 @@
     {
         "TrafficDensity": 0.5,
         "SimulationSpeed": 1
+    },
+
+    "ActorSettings":
+    {
+        "PassengerCar":
+        {
+            "Percentage": 0.7,
+            "Length": 20
+        },
+        "HeavyVehicle":
+        {
+            "Percentage": 0.2,
+            "Length": 40
+        },
+        "Pedestrian":
+        {
+            "Percentage": 0.1
+        }
     }
 }
